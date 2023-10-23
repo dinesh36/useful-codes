@@ -15,6 +15,9 @@ open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args
 ## Open without CORS: Linux
 google-chrome --disable-web-security --user-data-dir=/tmp/chrome_dev_test
 
+## Open without CORS: Windows
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp
+
 ## Change the playback rate
 document.getElementsByTagName('video')[0].playbackRate = 2
 
